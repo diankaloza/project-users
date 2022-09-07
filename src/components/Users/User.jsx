@@ -1,4 +1,8 @@
 import React from "react";
+
+import minusIcon from "../../assets/minus.svg";
+import plusIcon from "../../assets/plus.svg";
+
 export const User = ({
   id,
   email,
@@ -26,7 +30,7 @@ export const User = ({
     <img
       onClick={() => onClickInvite(id)}
       className="action"
-      src={`/assets/${isInvited ? "minus" : "plus"}.svg`}
+      src={isInvited ? minusIcon : plusIcon}
       alt="Action"
     />
   </li>
